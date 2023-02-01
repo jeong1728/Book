@@ -9,7 +9,7 @@ import org.mega.book.springboot.domain.BaseTimeEntity;
 import javax.persistence.*;
 
 @Getter
-@NoArgsConstructor
+@NoArgsConstructor//기본생성자 자동 추가
 @Entity
 public class Posts extends BaseTimeEntity {
     @Id
@@ -39,6 +39,4 @@ public class Posts extends BaseTimeEntity {
         this.title = title;
         this.content = content;
     }
-
-
 }
