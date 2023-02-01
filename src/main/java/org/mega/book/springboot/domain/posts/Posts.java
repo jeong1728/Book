@@ -1,6 +1,6 @@
 package org.mega.book.springboot.domain.posts;
 
-import jdk.jfr.events.CertificateId;
+
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -27,6 +27,7 @@ public class Posts extends BaseTimeEntity {
     * @Builder를 통해 제공되는 빌드 클래스를 사용
     * 생성자나 빌더 생성 시점 역할은 똑같습니다.
     */
+
     @Builder
     public Posts(String title, String content, String author){
         this.title = title;
